@@ -1,0 +1,11 @@
+{
+  "name": "test-game-blockchain-smart-contracts",
+  "version": "0.0.1",
+  "description": "2D based game ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
