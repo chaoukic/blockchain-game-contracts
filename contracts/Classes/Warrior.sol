@@ -10,7 +10,7 @@ string memory name,
         uint strength
 
  */
-contract Warrior is Class("Warrior", 250, 100, 15, 10, 5){
+contract Warrior is Class("Warrior", 250, 100, 5, 4, 20){
     constructor() {
         // Will add base skills for those
     }
