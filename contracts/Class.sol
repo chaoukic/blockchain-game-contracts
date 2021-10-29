@@ -2,13 +2,13 @@
 pragma solidity >=0.4.22 <0.9.0;
 import "./Skill.sol";
 contract Class {
-    string private _name;
-    uint _strength;
-    uint _intelligence;
-    uint _agility;
-    uint _health; 
-    uint _mana; 
-    uint _damage;
+    string internal _name;
+    uint internal _strength;
+    uint internal _intelligence;
+    uint internal _agility;
+    uint internal _health; 
+    uint internal _mana; 
+    uint internal _damage;
     Skill[] internal baseSkills;
 
     //@TODO : Will need to add a modifier that will force thee constructor to only be called by the creator of this smart contract 
@@ -48,5 +48,8 @@ contract Class {
 
     function getStrength() public view returns (uint){
         return  _strength;
+    }
+    function getHitPoints() public view returns(uint){
+        return _damage;
     }
 }
